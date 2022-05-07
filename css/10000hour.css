@@ -228,7 +228,7 @@ footer {
 /* 반응형 */
 @media screen and (max-width: 394px) {
   body {
-    padding: 0 38px;
+    padding: 0 25px;
   }
 
   header {
@@ -312,4 +312,27 @@ footer {
   .footer-text {
     font-size: 9px;
   }
+
+  .modal {
+    width: 330px;
+  }
+
+  .modal-wrap {
+    padding :40px 0;
+  }
+
+  .modal__title {
+    font-size: 64px;
+  }
+
+  .modal__img {
+    width: 300px;
+  }
+
+  .modal__btn {
+    width: 241px;
+    font-size: 14px;
+    border-radius: 13px;
+  }
+  
 }
