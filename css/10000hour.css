@@ -253,12 +253,16 @@ footer {
     font-size: 14px;
     margin: 62px 0 49px;
   }
+  
+  .inp-select label:first-child{
+    white-space: nowrap;
+  }
 
   .contents .inp-select input {
     width: 156px;
     font-size: 14px;
     margin-bottom: 10px;
-    padding: 10px 35px;
+    padding: 10px 25px;
     box-sizing: border-box;
     margin: 19px 0;
   }
@@ -272,12 +276,14 @@ footer {
     font-size: 14px;
     padding: 19px 36px;
     border-radius: 13px;
+    margin-left: -32px;
   }
 
   .cont-result .want-text,
   .cont-result .time-text {
     font-size: 14px;
     margin-bottom: 15px;
+    white-space: nowrap;
   }
 
   .cont-result .want-result,
@@ -296,6 +302,7 @@ footer {
 
   footer {
     margin-bottom: 32px;
+    white-space: nowrap;
   }
 
   .footer-logo {
