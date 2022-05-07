@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+/* animation */
+@keyframes loding {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* style */
+body {
+  background-color: #5b2386;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  background-image: url("../img/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 140px;
+}
+
+header .title__img {
+  width: 564px;
+  padding: 55px 0;
+}
+
+.contents {
+  text-align: center;
+}
+
+.contents .title {
+  font-family: "OTEnjoystoriesBA";
+  color: #f5df4d;
+  font-size: 36px;
+  margin: 66px 0 78px;
+}
+
+.contents .intro {
+  font-family: "GmarketSansMedium";
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 30px;
+  background-image: url("../img/quotes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contents .intro strong {
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+}
+
+.contents .inp-select {
+  font-family: "GmarketSansMedium";
+  font-size: 24px;
+  margin: 100px 0 150px;
+}
+
+.inp-select label {
+  display: block;
+}
+
+.contents .inp-select input {
+  font-family: "GmarketSansMedium";
+  width: 200px;
+  padding: 15px 20px;
+  margin: 0 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.contents .inp-select input::placeholder {
+  color: #babcbe;
+}
+
+.btn-wrap {
+  position: relative;
+  margin: 115px 0;
+}
+
+.btn-wrap .start__btn,
+.cont-result .gogo__btn,
+.cont-result .share__btn,
+.modal__btn {
+  font-family: "GmarketSansBold";
+  padding: 21px 49px;
+  background-color: #fcee21;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 56px;
+  color: #5b2386;
+  font-size: 24px;
+}
+
+.btn-wrap img {
+  position: absolute;
+  top: 18px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  line-height: 17px;
+}
+
+/* 결과 부분 */
+.cont-result {
+  text-align: center;
+}
+
+.cont-result .want-text,
+.cont-result .time-text {
+  font-family: "GmarketSansMedium";
+  font-size: 24px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.cont-result .want-result,
+.cont-result .time-result {
+  font-family: "GmarketSansBold";
+  font-size: 72px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.cont-result .share__btn {
+  background-color: #fff;
+  margin: 130px 18px;
+}
+
+.loding__img {
+  display: block;
+  width: 120px;
+  margin:0 auto 100px;
+  animation: loding 2s infinite linear;
+}
+
+/* modal */
+.modal {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 76px 0 68px;
+}
+
+.modal__title,
+.modal__sub-title {
+  font-family: "OTEnjoystoriesBA";
+  font-weight: 700;
+  color:#5B2386;
+}
+
+.modal__title {
+  font-size: 96px;
+}
+
+.modal__sub-title {
+  font-size: 36px;
+  margin-top: 4px;
+}
+
+.modal__img {
+  width: 433px;
+  margin: 29px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 394px) {
+  body {
+    padding: 0 38px;
+  }
+
+  header {
+    background-size: contain;
+    margin-top: 50px;
+  }
+
+  header .title__img {
+    width: 250px;
+  }
+
+  .contents .title {
+    font-size: 22px;
+    margin: 40px 31px 62px;
+  }
+
+  .contents .intro {
+    font-size: 14px;
+  }
+
+  .contents .inp-select {
+    font-size: 14px;
+    margin: 62px 0 49px;
+  }
+
+  .contents .inp-select input {
+    width: 156px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    margin: 19px 0;
+  }
+
+  .btn-wrap {
+    margin: 50px 0 64px;
+  }
+
+  .btn-wrap .start__btn {
+    width: 241px;
+    font-size: 14px;
+    padding: 19px 36px;
+    border-radius: 13px;
+  }
+
+  .cont-result .want-text,
+  .cont-result .time-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .cont-result .want-result,
+  .cont-result .time-result {
+    font-size: 24px;
+  }
+  .cont-result .gogo__btn,
+  .cont-result .share__btn {
+    font-size: 14px;
+    padding: 13px 17px;
+  }
+
+  .cont-result .share__btn {
+    margin: 55px 13px 83px;
+  }
+
+  footer {
+    margin-bottom: 32px;
+  }
+
+  .footer-logo {
+    width: 91px;
+  }
+
+  .footer-text {
+    font-size: 9px;
+  }
+}
