@@ -23,7 +23,7 @@ function startResult() {
         alert("시간을 입력해 주세요.");
         timeInput.focus();
         return;
-    } else if (timeInput.value > 24 || timeInput.value <= 0) {
+    } else if (timeInput.value <= 0 || timeInput.value > 24) {
         alert("0이상 24이하의 값을 입력해 주세요.");
         return;
     } 
