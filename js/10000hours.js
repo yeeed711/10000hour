@@ -13,7 +13,6 @@ function startResult() {
     const wantText = document.querySelector(".want-result");
     const timeText = document.querySelector(".time-result");
     const loding = document.querySelector(".loding__img");
-    console.log(typeof timeValueInt);
 
     if (fieldInput.value == "") {
         alert("입력값이 없습니다.");
@@ -29,6 +28,7 @@ function startResult() {
     } 
 
     loding.classList.remove("hidden");
+    result.classList.add("hidden"); 
     
     setTimeout(function(){
         loding.classList.add("hidden");
@@ -36,14 +36,6 @@ function startResult() {
         wantText.innerText = fieldInput.value;
         timeText.innerText = parseInt((10000/timeValueInt), 10);
      },1500 );
-}
-
-function openModal() {
-    modal.classList.remove("hidden");
-}
-
-function closeModal() {
-    modal.classList.add("hidden");
 }
 
 function copyUrl() {
@@ -60,6 +52,6 @@ function copyUrl() {
 }
 
 startBtn.addEventListener("click", startResult);
-modalBtn.addEventListener("click", closeModal);
-gogoBtn.addEventListener("click", openModal);
+modalBtn.addEventListener("click", ()=> modal.classList.toggle("hidden"));
+gogoBtn.addEventListener("click", ()=> modal.classList.toggle("hidden"));
 shareBtn.addEventListener("click", copyUrl);
